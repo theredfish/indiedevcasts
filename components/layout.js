@@ -65,7 +65,7 @@ export default function Layout({ children, home }) {
                 priority
                 src="/logo.png"
                 layout="fill"
-                alt="Indiedevcasts glitch logo"
+                alt="Indiedevcasts logo"
               />
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Layout({ children, home }) {
         {!home && (
           <div className="pt-16 pl-5 md:pl-0 md:max-w-3xl md:mx-auto">
             <Link href="/">
-              <a className="text-base font-semibold leading-snug bg-purple-500 text-white rounded-md shadow-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600 hover:text-white focus:text-white transition ease-in-out duration-150 py-2 px-4">
+              <a className="btn text-base font-semibold leading-snug py-2 px-4">
                 ← Home
               </a>
             </Link>
@@ -86,7 +86,7 @@ export default function Layout({ children, home }) {
         {!home && (
           <div className="pt-5 pb-8 pl-5 md:pl-0 md:max-w-3xl md:mx-auto">
             <Link href="/">
-              <a className="text-base font-semibold leading-snug bg-purple-500 text-white rounded-md shadow-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600 hover:text-white focus:text-white transition ease-in-out duration-150 py-2 px-4">
+              <a className="btn text-base font-semibold leading-snug py-2 px-4">
                 ← Home
               </a>
             </Link>

@@ -23,24 +23,24 @@ export default function Home({ allPostsData }) {
           content will be added soon!
         </p>
 
-        <div className="flex justify-around w-1/3 mx-auto mt-5 text-lg font-semibold">
+        <div className="flex justify-center mx-auto mt-5 text-lg md:text-xl">
           <a href="https://twitter.com/indiedevcasts" target="_blank">
             Twitter
           </a>
-          <span>-</span>
+          <span class="mx-2">-</span>
           <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
             YouTube
           </a>
-          <span>-</span>
+          <span class="mx-2">-</span>
           <a href="https://discord.gg/DGeFbGU" target="_blank">
             Discord
           </a>
-          <span>-</span>
+          <span class="mx-2">-</span>
           <a href="mailto:hello@indiedevcasts.com">Email</a>
         </div>
       </section>
 
-      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-12 text-center md:text-xl">
+      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-10 text-center md:text-xl">
         <h2 className="text-3xl md:text-4xl mb-5">
           Let's keep in touch with my newsletter
         </h2>
@@ -62,7 +62,7 @@ export default function Home({ allPostsData }) {
             type="email"
             name="EMAIL"
             required
-            placeholder="Type your cute email here"
+            placeholder="Your cute email here"
             className="block w-2/3 sm:w-1/3 px-4 py-3 text-base appearance-none text-black border border-gray-300 shadow-none bg-white rounded-md placeholder-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
           />
           <div
@@ -75,7 +75,7 @@ export default function Home({ allPostsData }) {
               tabIndex="-1"
             />
           </div>
-          <button className="mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-2/3 sm:w-1/5 border border-transparent px-6 py-3 text-base font-semibold leading-snug bg-purple-600 text-white rounded-md shadow-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700 transition ease-in-out duration-150">
+          <button className="btn mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-2/3 sm:w-1/5 border border-transparent px-6 py-3 ">
             <span>Subscribe</span>
             <span className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
               <svg className="h-8 w-8 spin" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@ export default function Home({ allPostsData }) {
         </form>
       </section>
 
-      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-20 text-center text-lg">
+      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-10 text-center text-lg">
         <h2 className="text-2xl md:text-3xl">My latest blog posts</h2>
         <ul className="mt-4">
           {allPostsData.map(({ id, date, title }) => (

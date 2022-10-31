@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const siteTitle = "Indiedevcasts";
-const siteDescription = "An indie gamedev sharing his journey";
+const siteDescription =
+  "Indiedevcasts is a community-centric project where I share content for indie gamedevs such as tutorials, videos, devlogs and more. Join us now!";
 const siteUrl = "https://indiedevcasts.com";
 const siteImage = "/metadata_logo.png";
 
@@ -30,6 +31,7 @@ export default function Layout({ children, home }) {
         />
         <link rel="manifest" href="/site.webmanifest" />
         <title>{siteTitle}</title>
+        <meta name="description" content={siteDescription} />
 
         <meta property="og:site_name" content={siteTitle} />
         <meta property="og:title" content={siteTitle} key="og_title" />
@@ -58,7 +60,7 @@ export default function Layout({ children, home }) {
       <header className="bg-overlapping-circles">
         {home && (
           <div className="mx-auto w-3/5 py-10">
-            <div className="relative h-40 w-40 md:h-52 md:w-52 mx-auto">
+            <div className="relative h-48 w-60 md:h-60 v md:w-80 mx-auto">
               <Image
                 priority
                 src="/logo.png"

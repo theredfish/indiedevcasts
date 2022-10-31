@@ -23,29 +23,21 @@ export default function Home({ allPostsData }) {
           content will be added soon!
         </p>
 
-        <ul className="mt-5 text-lg justify-center">
-          <li className="list-hz">
-            <a href="https://twitter.com/indiedevcasts" target="_blank">
-              Twitter
-            </a>
-          </li>
-          -
-          <li className="list-hz">
-            <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
-              YouTube
-            </a>
-          </li>
-          -
-          <li className="list-hz">
-            <a href="https://discord.gg/DGeFbGU" target="_blank">
-              Discord
-            </a>
-          </li>
-          -
-          <li className="list-hz">
-            <a href="mailto:hello@indiedevcasts.com">Email</a>
-          </li>
-        </ul>
+        <div className="flex justify-around w-1/3 mx-auto mt-5 text-lg font-semibold">
+          <a href="https://twitter.com/indiedevcasts" target="_blank">
+            Twitter
+          </a>
+          <span>-</span>
+          <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
+            YouTube
+          </a>
+          <span>-</span>
+          <a href="https://discord.gg/DGeFbGU" target="_blank">
+            Discord
+          </a>
+          <span>-</span>
+          <a href="mailto:hello@indiedevcasts.com">Email</a>
+        </div>
       </section>
 
       <section className="mx-auto md:w-5/6 lg:w-3/6 mt-12 text-center md:text-xl">
@@ -83,7 +75,7 @@ export default function Home({ allPostsData }) {
               tabIndex="-1"
             />
           </div>
-          <button className="mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-2/3 sm:w-1/5 border border-transparent px-6 py-3 text-base font-semibold leading-snug bg-purple-500 text-white rounded-md shadow-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600 transition ease-in-out duration-150">
+          <button className="mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-2/3 sm:w-1/5 border border-transparent px-6 py-3 text-base font-semibold leading-snug bg-purple-600 text-white rounded-md shadow-md hover:bg-purple-700 focus:outline-none focus:bg-purple-700 transition ease-in-out duration-150">
             <span>Subscribe</span>
             <span className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
               <svg className="h-8 w-8 spin" viewBox="0 0 24 24">

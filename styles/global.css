@@ -32,3 +32,13 @@
         @apply text-base font-semibold leading-snug bg-purple-600 text-white rounded-md shadow-md hover:bg-purple-700 hover:text-white focus:outline-none focus:bg-purple-700 focus:text-white transition ease-in-out duration-150
     }
 }
+
+@layer utilities {
+	.prose :where(iframe):not(:where([class~="not-prose"] *)) {
+		@apply aspect-video w-full h-auto
+	}
+
+    .prose :where(img.max-size-md):not(:where([class~="not-prose"] *)) {
+		@apply w-2/3 md:w-1/2 h-auto
+	}
+}

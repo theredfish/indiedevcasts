@@ -95,7 +95,7 @@ export default function Home({ allPostsData }) {
         </form>
       </section>
 
-      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-10 text-center text-lg">
+      <section className="mx-auto md:w-5/6 lg:w-3/6 my-10 text-center text-lg">
         <h2 className="text-2xl md:text-3xl">My latest blog posts</h2>
         <ul className="mt-4">
           {allPostsData.map(({ id, date, title }) => (

@@ -13,7 +13,7 @@ In 2018 I started Indiedevcasts and wanted to make video games for a living. Gue
 
 I was ambitious but wasn't well prepared which led me to focus on the wrong tasks. Starting a video game studio is tough and requires excellent organzational skills, especially when you have a day job. At the same time, I became father and stable income was no longer an option.
 
-Indiedevcasts was my dream project, but I had to make the very difficult choice to stop there and find a sustainable job. However, I made a very thoughtful decision and decided to **work remotely and double my income** to be worthwhile it and future-proof (e.g to financially support my next projects and life goals).
+Indiedevcasts was my dream project, but I had to make the very difficult choice to stop there and find a sustainable job. However, I made a very thoughtful decision and decided to **work remotely and double my income** to be worthwhile and future-proof (e.g to financially support my next projects and life goals).
 
 <img class="mx-auto max-size-md" src="/images/blog/indiedevcasts-reboot/disenchantment_crazy.gif" alt="Gif coming from disentchantment serie where we can read : are you crazy or under a curse?"/>
 

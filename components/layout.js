@@ -56,18 +56,22 @@ export default function Layout({ children, home }) {
           content={siteDescription}
           key="twitter_descr"
         />
+        <script
+          defer
+          data-domain="indiedevcasts.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </Head>
       <header className="bg-overlapping-circles">
         {home && (
-          <div className="mx-auto w-3/5 py-10">
-            <div className="relative h-48 w-60 md:h-60 v md:w-80 mx-auto">
-              <Image
-                priority
-                src="/logo.png"
-                layout="fill"
-                alt="Indiedevcasts logo"
-              />
-            </div>
+          <div className="relative text-center py-10">
+            <Image
+              priority
+              src="/logo.png"
+              height="175.5"
+              width="225"
+              alt="Indiedevcasts logo"
+            />
           </div>
         )}
       </header>

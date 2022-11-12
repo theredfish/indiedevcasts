@@ -27,15 +27,15 @@ export default function Home({ allPostsData }) {
           <a href="https://twitter.com/indiedevcasts" target="_blank">
             Twitter
           </a>
-          <span class="mx-2">-</span>
+          <span className="mx-2">-</span>
           <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
             YouTube
           </a>
-          <span class="mx-2">-</span>
+          <span className="mx-2">-</span>
           <a href="https://discord.gg/DGeFbGU" target="_blank">
             Discord
           </a>
-          <span class="mx-2">-</span>
+          <span className="mx-2">-</span>
           <a href="mailto:hello@indiedevcasts.com">Email</a>
         </div>
       </section>

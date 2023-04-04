@@ -100,8 +100,8 @@ export default function Home({ allPostsData }) {
         <ul className="mt-4">
           {allPostsData.map(({ id, date, title }) => (
             <li key={id} className="mb-3">
-              <Link href={`/posts/${id}`}>
-                <a className="text-lg md:text-xl">{title}</a>
+              <Link href={`/posts/${id}`} className="text-lg md:text-xl">
+                {title}
               </Link>{" "}
               -{" "}
               <span className="text-base md:text-lg">

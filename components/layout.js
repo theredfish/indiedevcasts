@@ -64,13 +64,14 @@ export default function Layout({ children, home }) {
       </Head>
       <header className="bg-overlapping-circles">
         {home && (
-          <div className="relative text-center py-10">
+          <div className="relative py-10">
             <Image
               priority
               src="/logo.png"
-              height="175.5"
+              height="175"
               width="225"
               alt="Indiedevcasts logo"
+              className="mx-auto"
             />
           </div>
         )}
@@ -79,20 +80,22 @@ export default function Layout({ children, home }) {
       <main className="mx-2">
         {!home && (
           <div className="pt-16 pl-5 md:pl-0 md:max-w-3xl md:mx-auto">
-            <Link href="/">
-              <a className="btn text-base font-semibold leading-snug py-2 px-4">
-                ← Home
-              </a>
+            <Link
+              href="/"
+              className="btn text-base font-semibold leading-snug py-2 px-4"
+            >
+              ← Home
             </Link>
           </div>
         )}
         {children}
         {!home && (
           <div className="pt-5 pb-8 pl-5 md:pl-0 md:max-w-3xl md:mx-auto">
-            <Link href="/">
-              <a className="btn text-base font-semibold leading-snug py-2 px-4">
-                ← Home
-              </a>
+            <Link
+              href="/"
+              className="btn text-base font-semibold leading-snug py-2 px-4"
+            >
+              ← Home
             </Link>
           </div>
         )}

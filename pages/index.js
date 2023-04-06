@@ -2,6 +2,11 @@ import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import NewsletterFeed from "../components/newsletter-feed";
+import Image from "next/image";
+import ArticleCard from "../components/articles/card";
+import H2 from "../components/typo/h2";
+import YoutubeLayout from "./layouts/youtube-layout";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -12,105 +17,108 @@ export async function getStaticProps() {
   };
 }
 
+function Articles({ articles }) {
+  return (
+    <section className="blog-container">
+      <H2>Articles</H2>
+      <div className="grid grid-cols-3 gap-x-10">
+        {articles.map((article, idx) => (
+          <ArticleCard key={`article-${idx}`} article={article} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function HeroBanner({ children }) {
+  return (
+    <div className="bg-indigo-500 w-full max-w-full text-gray-100 my-14 py-20">
+      <div className="blog-container flex flex-row space-x-10">
+        <p className="w-1/3 text-4xl">
+          Indiedevcasts is a project where I share gamedev content with the
+          community.
+        </p>
+        <p className="w-2/3 text-6xl">Devlogs, articles, videos and games.</p>
+      </div>
+    </div>
+  );
+}
+
+function AboutIndiedevcasts() {
+  return (
+    <section className="blog-container flex flex-row items-center relative mt-20">
+      <div className="h-96 bg-overlapping-circles w-10/12 text-gray-100">
+        <h3>ok</h3>
+      </div>
+      <div className="absolute right-0 w-4/12 h-96 top-10 bg-indigo-500"></div>
+    </section>
+  );
+}
+
+function Videos() {
+  return (
+    <section className="blog-container">
+      <H2>Videos</H2>
+      <YoutubeLayout />
+    </section>
+  );
+}
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <section className="mt-8 md:w-5/6 lg:w-3/6 md:mx-auto text-center text-lg md:text-2xl">
-        <p>
-          Welcome to Indiedevcasts! My name is Julian, I'm an indie game
-          developer sharing his journey. Here you will find various resources
-          around my universe such as videos, gamedev tutorials, or devlogs. More
-          content will be added soon!
-        </p>
+      <div>
+        <Articles articles={allPostsData} />
 
-        <div className="flex justify-center mx-auto mt-5 text-lg md:text-xl">
-          <a href="https://twitter.com/indiedevcasts" target="_blank">
-            Twitter
-          </a>
-          <span className="mx-2">-</span>
-          <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
-            YouTube
-          </a>
-          <span className="mx-2">-</span>
-          <a href="https://discord.gg/DGeFbGU" target="_blank">
-            Discord
-          </a>
-          <span className="mx-2">-</span>
-          <a href="mailto:hello@indiedevcasts.com">Email</a>
-        </div>
-      </section>
+        <HeroBanner />
 
-      <section className="mx-auto md:w-5/6 lg:w-3/6 mt-10 text-center md:text-xl">
-        <h2 className="text-3xl md:text-4xl mb-5">
-          Let's keep in touch with my newsletter
-        </h2>
-        <p className="mb-10">
-          The bi-weekly newsletter keeps me in touch with my community by
-          sharing resources for indie game developers and updates on my games
-          and tutorials. I also highlight community projects and content.
-        </p>
-        <form
-          action="https://indiedevcasts.us4.list-manage.com/subscribe/post?u=d1ce365b7fa38a948561b8785&amp;id=f06c9cb23b&amp;f_id=003b88e9f0"
-          method="post"
-          id="mc-embedded-subscribe-form"
-          name="mc-embedded-subscribe-form"
-          className="flex flex-wrap place-content-center"
-          target="_blank"
-          noValidate
-        >
-          <input
-            type="email"
-            name="EMAIL"
-            required
-            placeholder="Your cute email here"
-            className="block w-2/3 sm:w-1/3 px-4 py-3 text-base appearance-none text-black border border-gray-300 shadow-none bg-white rounded-md placeholder-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300"
-          />
-          <div
-            style={{ position: "absolute", left: "-5000px" }}
-            aria-hidden="true"
-          >
-            <input
-              type="text"
-              name="b_d1ce365b7fa38a948561b8785_f06c9cb23b"
-              tabIndex="-1"
-            />
+        <Videos />
+
+        <AboutIndiedevcasts />
+
+        <section className="mt-10">
+          <div className="flex justify-center mx-auto mt-5 text-lg md:text-xl">
+            <a href="https://twitter.com/indiedevcasts" target="_blank">
+              Twitter
+            </a>
+            <span className="mx-2">-</span>
+            <a href="https://www.youtube.com/@indiedevcasts" target="_blank">
+              YouTube
+            </a>
+            <span className="mx-2">-</span>
+            <a href="https://discord.gg/DGeFbGU" target="_blank">
+              Discord
+            </a>
+            <span className="mx-2">-</span>
+            <a href="mailto:hello@indiedevcasts.com">Email</a>
           </div>
-          <button className="btn mt-4 relative sm:mt-0 sm:h-auto sm:ml-4 block w-2/3 sm:w-1/5 border border-transparent px-6 py-3 ">
-            <span>Subscribe</span>
-            <span className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-0">
-              <svg className="h-8 w-8 spin" viewBox="0 0 24 24">
-                <path
-                  className="text-gray-600"
-                  fill="currentColor"
-                  d="M12 21a9 9 0 100-18 9 9 0 000 18zm0-2a7 7 0 110-14 7 7 0 010 14z"
-                ></path>
-                <path
-                  className="text-gray-400"
-                  fill="currentColor"
-                  d="M12 3a9 9 0 010 18v-2a7 7 0 000-14V3z"
-                ></path>
-              </svg>
-            </span>
-          </button>
-        </form>
-      </section>
+        </section>
 
-      <section className="mx-auto md:w-5/6 lg:w-3/6 my-10 text-center text-lg">
-        <h2 className="text-2xl md:text-3xl">My latest blog posts</h2>
-        <ul className="mt-4">
-          {allPostsData.map(({ id, date, title }) => (
-            <li key={id} className="mb-3">
-              <Link href={`/posts/${id}`} className="text-lg md:text-xl">
-                {title}
-              </Link>{" "}
-              -{" "}
-              <span className="text-base md:text-lg">
-                <Date dateString={date} />
-              </span>
-            </li>
-          ))}
-        </ul>
-      </section>
+        {/* <section className="mx-auto md:w-5/6 lg:w-3/6 mt-10 text-center md:text-xl">
+          <h2 className="text-3xl md:text-4xl mb-5">Newsletter</h2>
+          <p className="mb-10">
+            Keep up to date with my newsletter. I will occasionally send you
+            updates about my articles, tutorials, devlogs and videos. I also
+            highlight community projects and content!
+          </p>
+          <NewsletterFeed />
+
+          <div className="flex items-center space-x-2">
+            <a
+              href="https://mailchi.mp/e1b370d548a1/indiedevcasts-newsletter"
+              className="btn block mt-4 w-40 px-6 py-3"
+            >
+              Subscribe
+            </a>
+            <a
+              href="https://mailchi.mp/e1b370d548a1/indiedevcasts-newsletter"
+              className="btn block bg-transparent border border-purple-800 hover:bg-inherit hover:border-purple-500 mt-4 px-6 py-3"
+            >
+              Consult archives
+            </a>
+          </div>
+        </section> */}
+      </div>
     </Layout>
   );
 }

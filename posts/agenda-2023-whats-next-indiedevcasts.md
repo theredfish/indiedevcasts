@@ -1,7 +1,7 @@
 ---
 title: "Agenda - 2023: What's next for Indiedevcasts"
 description: "2023 is an important year for Indiedevcasts, a year of changes. In this article, I share with you the next steps for Indiedevcasts."
-image: "agenda_2023.png"
+image: "agenda_2023.jpg"
 date: "2023-03-29"
 ---
 

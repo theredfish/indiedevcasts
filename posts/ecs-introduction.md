@@ -1,7 +1,7 @@
 ---
 title: "Introduction to the Entity Component System"
 description: "Let's explore different designs for your codebase and learn about the Entity Component System paradigm with an example using the Bevy game engine."
-image: "intro_ecs.png"
+image: "intro_ecs.jpg"
 date: "2023-01-20"
 ---
 

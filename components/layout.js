@@ -62,22 +62,28 @@ export default function Layout({ children, home }) {
           src="https://plausible.io/js/script.js"
         ></script>
       </Head>
-      <header className="bg-overlapping-circles">
+      <header className="bg-overlapping-circles py-10">
         {home && (
           <div className="relative py-10">
+            {/* initial ratio: 330x258 */}
             <Image
               priority
               src="/logo.png"
-              height="175"
-              width="225"
+              width="270"
+              height="206"
               alt="Indiedevcasts logo"
               className="mx-auto"
+              style={{
+                width: "auto",
+                height: "auto",
+              }}
             />
           </div>
         )}
       </header>
+      <hr className="mb-16 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 border h-2" />
 
-      <main className="mx-2">
+      <main>
         {!home && (
           <div className="pt-16 pl-5 md:pl-0 md:max-w-3xl md:mx-auto">
             <Link

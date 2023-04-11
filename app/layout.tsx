@@ -12,6 +12,12 @@ const siteDescription =
 const logoPath = "/metadata_logo.png";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    `${
+      process.env.NEXT_PUBLIC_METADATA_BASE ||
+      `http://localhost:${process.env.PORT || 3000}`
+    }`
+  ),
   title: siteTitle,
   description: siteDescription,
   keywords: "gamedev, indie, indiedev, indiedevcasts, indiegame",

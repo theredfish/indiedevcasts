@@ -2,9 +2,7 @@ import { getAllPostIds, getPostData } from "../../../lib/posts";
 import PostLayout, { Post } from "../post-layout";
 
 async function getPost(params) {
-  const post = getPostData(params.id);
-
-  return post;
+  return await getPostData(params.id);
 }
 
 export async function generateStaticParams() {

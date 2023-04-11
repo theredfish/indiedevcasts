@@ -1,13 +1,9 @@
-import { getAllPostIds, getPostData } from "../../../lib/posts";
+import { getPostData } from "../../../lib/posts";
 import PostLayout, { Post } from "../post-layout";
 import type { Metadata } from "next";
 
 async function getPost(params) {
   return await getPostData(params.id);
-}
-
-export async function generateStaticParams() {
-  return getAllPostIds();
 }
 
 export async function generateMetadata({ params }): Promise<Metadata> {

@@ -29,11 +29,9 @@ I remember the first exchanges in English ... I was a terrible speaker (and I st
 
 It's been 1 year and a half now, and I've made great progress. I have a sustainable activity, more freedom because I work remotely, I can manage my time and I have savings. Now my main goal with Indiedevcasts is to start over and to build a community!
 
-This means that **you will be part of this journey**! My ultimate goal is to build this community, share with you and learn from you. I want to make video games for fun, not for a living. If it works out financially then that's fantastic, otherwise I don't care because it will be worth it for the community aspect! Now if you want to take a peek at my next video game made with [bevy engine](https://bevyengine.org/), here is the video :
+This means that **you will be part of this journey**! My ultimate goal is to build this community, share with you and learn from you. I want to make video games for fun, not for a living. If it works out financially then that's fantastic, otherwise I don't care because it will be worth it for the community aspect! Now if you want to take a peek at my next video game made with [bevy engine](https://bevyengine.org/), here is the [video](https://www.youtube-nocookie.com/embed/kiP0X6eFEg8).
 
-<iframe class="" src="https://www.youtube-nocookie.com/embed/kiP0X6eFEg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-If you are interested in gamedev content you can [subscribe to the newsletter now](http://eepurl.com/gRxLj9) to not miss any publication. Also feel free to <a href="mailto:hello@indiedevcasts.com">email me</a> if you have **a game or project you would like to feature in the newsletter**.
+If you are interested in gamedev content you can [subscribe to the newsletter now](http://eepurl.com/gRxLj9) to not miss any publication. Also feel free to [email me](mailto:hello@indiedevcasts.com) if you have **a game or project you would like to feature in the newsletter**.
 
 ## What about you?
 

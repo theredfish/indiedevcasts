@@ -1,7 +1,6 @@
 "use client";
 
 import Date from "../../components/date";
-import DisqusComments from "../../components/comments";
 import Head from "next/head";
 import type { Metadata } from "next";
 
@@ -32,10 +31,6 @@ const PostLayout = ({ post }: PostLayoutProps) => {
           <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
         </div>
       </article>
-
-      <div className="pt-5 pb-8 px-5 md:pl-0 md:max-w-3xl md:mx-auto">
-        <DisqusComments post={post} />
-      </div>
     </>
   );
 };

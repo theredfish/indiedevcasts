@@ -1,5 +1,5 @@
 ---
-title: "Indiedevcasts : Reboot"
+title: "Indiedevcasts: Reboot"
 description: "In 2018 I started Indiedevcasts and wanted to make video games for a living. Guess what? I failed. But now I'm back with new perspectives!"
 image: "launching.jpg"
 date: "2022-11-01"

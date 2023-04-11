@@ -30,7 +30,7 @@ In object oriented programming, we often use design patterns formalized in the p
 As a side note I also recommend reading [Game Programming Patterns](http://gameprogrammingpatterns.com) which is much more specific to game development.
 
 <figure>
-    <img class="mx-auto max-size-lg" src="/images/blog/ecs-introduction/class_diagram_general.svg" alt="Class diagram representing inheritance between entities such as Player and Ai inheriting Humanoid class that also inherits Collider and GameObject.">
+    <img class="mx-auto max-size-md" src="/images/blog/ecs-introduction/class_diagram_general.svg" alt="Class diagram representing inheritance between entities such as Player and Ai inheriting Humanoid class that also inherits Collider and GameObject.">
     <figcaption>Class diagram representing the concept of inheritance with OOD. We can observe a tree representation.</figcaption>
 
 </figure>
@@ -48,7 +48,7 @@ If your game has a large amount of data, requires large-scale streaming; and a b
 The idea is that you can use specific data structures, like arrays, in a way that takes advantage of CPU caching.
 
 <figure>
-    <img class="mx-auto max-size-lg" src="/images/blog/ecs-introduction/data_cache_access_flow_chart.svg" alt="Flow chart diagram describing the concept of cache hit and cache miss."/>
+    <img class="mx-auto max-size-md" src="/images/blog/ecs-introduction/data_cache_access_flow_chart.svg" alt="Flow chart diagram describing the concept of cache hit and cache miss."/>
     <figcaption>Flowchart describing how cache data is accessed and the concept of cache hit and cache miss.</figcaption>
 </figure>
 
@@ -83,7 +83,7 @@ As explained in the Unity ECS documentation [^unity-ecs-doc], entities can be or
 [^unity-ecs-doc]: Unity manual, Component concepts - [Entities@1.0](https://docs.unity3d.com/Packages/com.unity.entities@1.0/manual/concepts-components.html)
 
 <figure>
-    <img class="mx-auto max-size-xl" src="/images/blog/ecs-introduction/ecs_data_systems.png" alt="."/>
+    <img class="mx-auto max-size-lg" src="/images/blog/ecs-introduction/ecs_data_systems.png" alt="."/>
     <figcaption>Example of a system applied to an archetype.</figcaption>
 </figure>
 

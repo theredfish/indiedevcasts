@@ -19,19 +19,23 @@ export type Post = {
 
 const PostLayout = ({ post }: PostLayoutProps) => {
   return (
-    <>
-      <article className="relative w-full lg:mx-auto lg:max-w-4xl px-5 bg-none pt-8 lg:pb-5">
-        <div className="prose prose-zinc prose-a:text-red-400 prose-a:hover:to-red-500 prose-a:no-underline prose-h1:text-4xl prose-md lg:prose-lg dark:prose-invert max-w-3xl mx-auto">
-          <div>
-            <Date dateString={post.date} />
-          </div>
-          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-pink-400 to-orange-500 py-2">
-            {post.title}
-          </h1>
-          <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+    <div className="px-5 w-full md:w-4/5 md:max-w-screen-xl mx-auto">
+      <div className="max-w-screen-lg">
+        <h1 className="font-bold text-5xl md:text-7xl ">{post.title}</h1>
+        <p className="mt-8 font-medium text-slate-600 uppercase">
+          {post.description}
+        </p>
+        <div className="mt-12 uppercase font-medium">
+          <Date dateString={post.date} />
         </div>
+      </div>
+
+      <hr className="mt-8 bg-slate-300 h-0.5" />
+
+      <article className="prose prose-lg lg:prose-xl md:prose-md max-w-none mt-20">
+        <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
       </article>
-    </>
+    </div>
   );
 };
 

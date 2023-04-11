@@ -1,8 +1,5 @@
 import { getAllPostIds, getPostData } from "../../../lib/posts";
-import PostLayout from "../post-layout";
-import type { Post } from "../post-layout";
-// TODO: check if better here or elsewhere
-import "prismjs/themes/prism-twilight.min.css";
+import PostLayout, { Post } from "../post-layout";
 
 async function getPost(params) {
   const post = getPostData(params.id);

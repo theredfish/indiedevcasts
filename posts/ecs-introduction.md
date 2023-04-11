@@ -30,7 +30,7 @@ In object oriented programming, we often use design patterns formalized in the p
 As a side note I also recommend reading [Game Programming Patterns](http://gameprogrammingpatterns.com) which is much more specific to game development.
 
 <figure>
-    <img class="mx-auto max-size-md" src="/images/blog/ecs-introduction/class_diagram_general.svg" alt="Class diagram representing inheritance between entities such as Player and Ai inheriting Humanoid class that also inherits Collider and GameObject.">
+    <img class="mx-auto max-size-lg" src="/images/blog/ecs-introduction/class_diagram_general.svg" alt="Class diagram representing inheritance between entities such as Player and Ai inheriting Humanoid class that also inherits Collider and GameObject.">
     <figcaption>Class diagram representing the concept of inheritance with OOD. We can observe a tree representation.</figcaption>
 
 </figure>

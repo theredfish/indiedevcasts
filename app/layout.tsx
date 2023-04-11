@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import "../styles/global.css";
+import "highlight.js/styles/shades-of-purple.css";
 import Image from "next/image";
 
 const siteTitle = "Indiedevcasts";

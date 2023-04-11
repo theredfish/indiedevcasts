@@ -28,6 +28,14 @@
     @apply text-lg;
   }
 
+  .prose pre {
+    @apply bg-transparent py-0 px-0 mx-0 my-0;
+  }
+
+  .prose code {
+    @apply rounded-md;
+  }
+
   li.list-hz {
     @apply inline-block px-2;
   }

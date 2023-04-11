@@ -7,8 +7,6 @@ date: "2022-11-01"
 
 <!-- #9884FC -->
 
-In 2018 I started Indiedevcasts and wanted to make video games for a living. Guess what? I failed. But now I'm back with new perspectives!
-
 ## The big decision
 
 I was ambitious but wasn't well prepared which led me to focus on the wrong tasks. Starting a video game studio is tough and requires excellent organzational skills, especially when you have a day job. At the same time, I became father and stable income was no longer an option.

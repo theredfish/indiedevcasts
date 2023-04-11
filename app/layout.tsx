@@ -67,7 +67,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <PlausibleProvider domain="indiedevcasts.com" />
       </head>
-      <body className="bg-gray-100 text-gray-800 antialiased">
+      <body className="bg-gray-50 text-slate-800 antialiased">
         <header className="bg-overlapping-circles py-10">
           <div className="relative py-10">
             {/* initial ratio: 330x258 */}
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             />
           </div>
         </header>
-        <hr className="mb-16 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 border h-2" />
+        <hr className="mb-16 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
         {children}
       </body>
     </html>

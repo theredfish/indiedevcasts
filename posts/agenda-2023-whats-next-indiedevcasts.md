@@ -1,13 +1,11 @@
 ---
-title: "Agenda - 2023: What's next for Indiedevcasts"
+title: "Agenda 2023: What's next for Indiedevcasts"
 description: "2023 is an important year for Indiedevcasts, a year of changes. In this article, I share with you the next steps for Indiedevcasts."
 image: "agenda_2023.jpg"
 date: "2023-03-29"
 ---
 
 After announcing [Indiedevcasts : Reboot](/posts/indiedevcasts-reboot) last November and publishing 5 videos, I think it's time to talk about the next steps for Indiedevcasts. In this article, I want to talk about what I have in mind for the future of the community.
-
-## Special thanks
 
 First of all I want to thank my very first subscribers to my [Youtube channel](https://www.youtube.com/@indiedevcasts) and my newsletter! I'm really glad you're here! As you know, the goal behind Indiedevcasts is not just to make games but to build a community! It means a lot to me! Thank you 🤜🤛!
 

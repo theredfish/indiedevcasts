@@ -1,8 +1,4 @@
-"use client";
-
 import Date from "../../components/date";
-import Head from "next/head";
-import type { Metadata } from "next";
 
 type PostLayoutProps = {
   post: Post;

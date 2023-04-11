@@ -9,13 +9,11 @@ import Link from "next/link";
 const siteTitle = "Indiedevcasts";
 const siteDescription =
   "Indiedevcasts is a community-centric project where I share content for indie gamedevs such as tutorials, videos, devlogs and more. Join us now!";
-const siteUrl = new URL("https://indiedevcasts.com");
 const logoPath = "/metadata_logo.png";
 
 export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
-  authors: [{ name: "Indiedevcasts", url: "https://indiedevcasts.com" }],
   keywords: "gamedev, indie, indiedev, indiedevcasts, indiegame",
   icons: [
     {

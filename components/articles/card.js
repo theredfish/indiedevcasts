@@ -11,7 +11,7 @@ export default function ArticleCard({ article }) {
           <Image
             src={`/images/blog/${article.id}/${article.image}`}
             fill
-            className="rounded-xl"
+            className="rounded-md"
             alt={`illustration for ${article.title}`}
           />
         </div>

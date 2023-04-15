@@ -1,4 +1,4 @@
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData } from "@lib/posts";
 import HomePage from "./home-page";
 
 async function fetchYoutubeVideos(quantity: number) {
@@ -29,8 +29,8 @@ async function fetchYoutubeVideos(quantity: number) {
 }
 
 export default async function Page() {
-  const posts = getSortedPostsData();
   const lastThreeYoutubeVideos = await fetchYoutubeVideos(3);
+  const posts = await getSortedPostsData();
 
   return (
     <HomePage recentPosts={posts} youtubeVideoIds={lastThreeYoutubeVideos} />

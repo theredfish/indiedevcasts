@@ -14,7 +14,7 @@ const logoPath = "/metadata_logo.png";
 export const metadata: Metadata = {
   metadataBase: new URL(
     `${
-      process.env.NEXT_PUBLIC_METADATA_BASE ||
+      process.env.NEXT_PUBLIC_BASE_URL ||
       `http://localhost:${process.env.PORT || 3000}`
     }`
   ),

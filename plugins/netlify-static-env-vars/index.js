@@ -12,5 +12,5 @@ export const onPreBuild = function () {
   })();
 
   // Creates an environment variable accessible from both browser and backend.
-  process.env["NEXT_PUBLIC_METADATA_BASE"] = deployUrl;
+  process.env["NEXT_PUBLIC_BASE_URL"] = deployUrl;
 };

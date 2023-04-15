@@ -1,7 +1,0 @@
-{
-    "private": true,
-    "name": "netlify-nextjs-metadatabase-static-env",
-    "version": "0.1.0",
-    "description": "A netlify plugin to generate a static metadata base information depending on the Netlify context",
-    "type": "module"
-  }

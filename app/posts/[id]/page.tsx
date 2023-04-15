@@ -2,12 +2,8 @@ import { getPostData } from "../../../lib/posts";
 import PostLayout, { Post } from "../post-layout";
 import type { Metadata } from "next";
 
-async function getPost(params) {
-  return await getPostData(params.id);
-}
-
 export async function generateMetadata({ params }): Promise<Metadata> {
-  const post: Post = await getPost(params);
+  const post: Post = await getPostData(params.id);
   const imageUrl = `/images/blog/${post.id}/${post.image}`;
 
   return {
@@ -28,7 +24,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 }
 
 export default async function Post({ params }) {
-  const post: Post = await getPost(params);
+  const post: Post = await getPostData(params.id);
 
   return <PostLayout post={post} />;
 }

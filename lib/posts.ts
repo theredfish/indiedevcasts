@@ -8,42 +8,26 @@ import rehypeStringify from "rehype-stringify";
 import rehypeHighlight from "rehype-highlight";
 import footnotes from "remark-footnotes";
 import { Post } from "../app/posts/post-layout";
+import "server-only";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPostsData() {
+export async function getSortedPostsData() {
   // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
-
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    // Combine the data with the id
-    const { title, date, description, image } = matterResult.data;
-    const post: Post = {
-      id,
-      contentHtml: fileContents,
-      title,
-      date,
-      description,
-      image,
-    };
-
-    return post;
-  });
+  const files = fs.readdirSync(postsDirectory);
+  const posts = await Promise.all(
+    files.map(async (file) => {
+      // Remove ".md" from file name to get id
+      const id = file.replace(/\.md$/, "");
+      return await getPostData(id);
+    })
+  );
 
   // Sort posts by date
-  return allPostsData.sort((currPost, nextPost) => {
-    if (currPost.date < nextPost.date) {
+  return posts.sort((left, right) => {
+    if (left.date < right.date) {
       return 1;
-    } else if (currPost.date > nextPost.date) {
+    } else if (left.date > right.date) {
       return -1;
     }
 

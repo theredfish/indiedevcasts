@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "name": "netlify-static-env-vars",
+    "version": "0.1.0",
+    "description": "A netlify plugin to generate static environment variables depending on the Netlify context",
+    "type": "module"
+  }

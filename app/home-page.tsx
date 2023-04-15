@@ -5,14 +5,14 @@ import { getSortedPostsData } from "../lib/posts";
 import {
   BellAlertIcon,
   ChatBubbleLeftRightIcon,
-  CheckBadgeIcon,
-  CheckCircleIcon,
   NewspaperIcon,
   PlayIcon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
+import { Post } from "./posts/post-layout";
 
 export async function getStaticProps() {
-  const recentPosts = getSortedPostsData();
+  const recentPosts: Post[] = await getSortedPostsData();
   return {
     props: {
       recentPosts,
@@ -20,13 +20,13 @@ export async function getStaticProps() {
   };
 }
 
-function Articles({ articles }) {
+function Articles({ recentPosts }) {
   return (
     <section className="blog-container">
       <H2>Articles</H2>
       <div className="grid sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-3 gap-y-10">
-        {articles.map((article, idx) => (
-          <ArticleCard key={`article-${idx}`} article={article} />
+        {recentPosts.map((post: Post, idx: number) => (
+          <ArticleCard key={`article-${idx}`} article={post} />
         ))}
       </div>
     </section>
@@ -117,18 +117,20 @@ function AboutIndiedevcasts() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
-                className="fill-gray-100 hover:fill-indigo-500 h-6"
+                className="fill-gray-100 group-hover:fill-indigo-500 h-6"
               >
                 <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
               </svg>
             </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              className="fill-gray-100 hover:fill-indigo-500 hover:cursor-pointer h-6"
-            >
-              <path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
-            </svg>
+            <Link href="/atom.xml" target="_blank" className="group border-b-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                className="fill-gray-100 group-hover:fill-indigo-500 hover:cursor-pointer h-6"
+              >
+                <path d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
+              </svg>
+            </Link>
           </div>
         </div>
         <div className="lg:absolute w-full lg:w-3/6 rounded-b-md lg:rounded-md h-full bg-indigo-500 top-10 -right-40 xl:-right-52 p-5 lg:p-10 xl:pt-16 text-white">
@@ -175,7 +177,7 @@ function AboutIndiedevcasts() {
             <a
               href="https://mailchi.mp/e1b370d548a1/indiedevcasts-newsletter"
               target="_blank"
-              className="btn text-center w-40 px-6 py-3 text-xl bg-transparent border border-white hover:bg-transparent hover:shadow-white hover:shadow-md"
+              className="btn text-center w-40 px-6 py-3 text-xl bg-transparent focus:bg-transparent border border-white hover:bg-transparent hover:shadow-white hover:shadow-md"
             >
               Subscribe
             </a>
@@ -216,14 +218,14 @@ function YoutubeVideo({ id }) {
 export default function HomePage({ recentPosts, youtubeVideoIds }) {
   return (
     <div>
-      <Articles articles={recentPosts} />
+      <Articles recentPosts={recentPosts} />
 
       <HeroBanner />
 
       <section className="blog-container">
         <H2>Latest Videos</H2>
         <div className="grid sm:grid-cols-2 sm:gap-x-10 lg:grid-cols-3 gap-y-10">
-          {youtubeVideoIds.map((id) => {
+          {youtubeVideoIds.map((id: number) => {
             return <YoutubeVideo key={`youtube-video-${id}`} id={id} />;
           })}
         </div>

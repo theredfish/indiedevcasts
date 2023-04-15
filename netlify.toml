@@ -1,2 +1,2 @@
 [[plugins]]
-package = "./plugins/netlify-nextjs-metadatabase-static-env"
+package = "./plugins/netlify-static-env-vars"

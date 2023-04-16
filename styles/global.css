@@ -23,7 +23,6 @@
   .prose a {
     @apply text-gray-800 hover:text-rose-500 border-b border-rose-500;
   }
-
   .prose li {
     @apply text-lg;
   }

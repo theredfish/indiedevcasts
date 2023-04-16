@@ -5,6 +5,7 @@ import "../styles/global.css";
 import "../styles/shades-of-purple.css";
 import Image from "next/image";
 import Link from "next/link";
+import SocialIcons from "components/social-icons";
 
 const siteTitle = "Indiedevcasts";
 const siteDescription =
@@ -66,6 +67,30 @@ type RootLayoutProps = {
   children: React.ReactNode;
 };
 
+function Footer() {
+  return (
+    <div className="mt-28">
+      <hr className="bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
+      <footer className="flex w-full bg-[#18181b] text-gray-100 py-5">
+        <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:w-full xl:w-3/5 max-w-4xl mx-auto px-10">
+          <div className="flex flex-col sm:flex-row sm:inline-flex sm:space-x-6">
+            <span>&copy; {new Date().getFullYear()} Indiedevcasts</span>
+            <Link href="/privacy-policy" className="text-gray-100 border-b-0">
+              Privacy Policy
+            </Link>
+            <Link href="/legal-notice" className="text-gray-100 border-b-0">
+              Legal Notice
+            </Link>
+          </div>
+          <div className="flex flex-row items-center space-x-5">
+            <SocialIcons />
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
@@ -94,6 +119,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </header>
         <hr className="mb-16 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -15,7 +15,7 @@ export function getPostsAtomFeed(posts: Post[]) {
     description: "Indiedevcasts written material feed",
     id: siteUrl.toString(),
     link: siteUrl.toString(),
-    image: `${siteUrl}metadata_logo.png`,
+    image: `${siteUrl}logo.png`,
     favicon: `${siteUrl}favicon-32x32.png`,
     copyright: `All rights reserved ${new Date().getFullYear()}, Indiedevcasts, Julian Didier`,
     feedLinks: {

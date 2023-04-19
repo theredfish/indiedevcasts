@@ -105,8 +105,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <Image
                 priority
                 src="/logo.png"
-                width="270"
-                height="206"
+                width="189"
+                height="144"
                 alt="Indiedevcasts logo"
                 className="mx-auto"
                 style={{

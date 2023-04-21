@@ -1,19 +1,14 @@
 import { getSortedPostsData } from "@lib/posts";
 import HomePage from "./home-page";
 
+export const dynamic = "force-dynamic";
+
 async function fetchYoutubeVideos(quantity: number) {
   const YOUTUBE_SEARCH_API = "https://www.googleapis.com/youtube/v3/search";
   const API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;
-  // We don't necessarily need to get the most up-to-date YouTube videos, 10 min
-  // should be ok for now.
-  const EVERY_TEN_MINUTES = 600;
-
   const res = await fetch(
-    `${YOUTUBE_SEARCH_API}?key=${API_KEY}&channelId=${CHANNEL_ID}&part=id&order=date&maxResults=${quantity}`,
-    {
-      next: { revalidate: EVERY_TEN_MINUTES },
-    }
+    `${YOUTUBE_SEARCH_API}?key=${API_KEY}&channelId=${CHANNEL_ID}&part=id&order=date&maxResults=${quantity}`
   );
 
   if (!res.ok) {

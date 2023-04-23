@@ -1,7 +1,7 @@
 import { getSortedPostsData } from "@lib/posts";
 import HomePage from "./home-page";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 600;
 
 async function fetchYoutubeVideos(quantity: number) {
   const YOUTUBE_SEARCH_API = "https://www.googleapis.com/youtube/v3/search";

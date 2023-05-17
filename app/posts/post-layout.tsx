@@ -18,7 +18,7 @@ const PostLayout = ({ post }: PostLayoutProps) => {
     <div className="px-5 w-full md:w-4/5 md:max-w-screen-lg mx-auto">
       <div className="max-w-screen-lg">
         <h1 className="font-bold text-5xl md:text-7xl ">{post.title}</h1>
-        <p className="mt-8 font-medium text-slate-600 uppercase">
+        <p className="mt-8 font-medium text-slate-600 text-lg">
           {post.description}
         </p>
         <div className="mt-12 uppercase font-medium">

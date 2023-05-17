@@ -4,6 +4,7 @@ import HomePage from "./home-page";
 export const revalidate = 600;
 
 async function fetchYoutubeVideos(quantity: number) {
+  // TODO : see to use /videos for a quota of 1 instead of 100.
   const YOUTUBE_SEARCH_API = "https://www.googleapis.com/youtube/v3/search";
   const API_KEY = process.env.YOUTUBE_API_KEY;
   const CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID;

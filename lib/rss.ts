@@ -3,12 +3,7 @@ import { Post } from "app/posts/post-layout";
 import "server-only";
 
 export function getPostsAtomFeed(posts: Post[]) {
-  const siteUrl = new URL(
-    `${
-      process.env.NEXT_PUBLIC_BASE_URL ||
-      `http://localhost:${process.env.PORT || 3000}`
-    }`
-  );
+  const siteUrl = new URL(`${process.env.NEXT_PUBLIC_URL}`);
 
   const feed = new Feed({
     title: "Indiedevcasts",

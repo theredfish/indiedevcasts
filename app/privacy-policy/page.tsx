@@ -1,5 +1,5 @@
-import Date from "components/date";
-import H2 from "components/typo/h2";
+import Date from "@components/date";
+import H2 from "@components/typo/h2";
 
 export default async function Page() {
   return (

@@ -1,6 +1,7 @@
 import { getSortedPostsData } from "@lib/posts";
-import HomePage from "./home-page";
+import HomePage from "@app/home-page";
 
+// Every 10 minutes.
 export const revalidate = 600;
 
 async function fetchYoutubeVideos(quantity: number) {

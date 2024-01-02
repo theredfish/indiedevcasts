@@ -1,7 +1,7 @@
 import { getPostsAtomFeed } from "@lib/rss";
 import { getSortedPostsData } from "@lib/posts";
 import { NextResponse } from "next/server";
-import { cache } from "react";
+
 import "server-only";
 
 // Every 30 minutes. The value needs to be statically analyzable.

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Date from "../date";
+import Date from "@components/date";
 
 export default function ArticleCard({ article }) {
   return (

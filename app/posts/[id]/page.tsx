@@ -1,4 +1,4 @@
-import { getPostData } from "../../../lib/posts";
+import { getPostData } from "@lib/posts";
 import PostLayout, { Post } from "../post-layout";
 import type { Metadata } from "next";
 

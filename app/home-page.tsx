@@ -1,16 +1,14 @@
-import React from "react";
-import ArticleCard from "../components/articles/card";
-import H2 from "../components/typo/h2";
-import { getSortedPostsData } from "../lib/posts";
+import ArticleCard from "@components/articles/card";
+import H2 from "@components/typo/h2";
+import SocialIcons from "@components/social-icons";
+import { getSortedPostsData } from "@lib/posts";
 import {
   BellAlertIcon,
   ChatBubbleLeftRightIcon,
   NewspaperIcon,
   PlayIcon,
 } from "@heroicons/react/24/solid";
-import Link from "next/link";
-import { Post } from "./posts/post-layout";
-import SocialIcons from "components/social-icons";
+import { Post } from "@app/posts/post-layout";
 
 export async function getStaticProps() {
   const recentPosts: Post[] = await getSortedPostsData();

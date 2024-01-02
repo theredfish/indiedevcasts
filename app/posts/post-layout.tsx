@@ -1,4 +1,4 @@
-import Date from "../../components/date";
+import Date from "@components/date";
 
 type PostLayoutProps = {
   post: Post;

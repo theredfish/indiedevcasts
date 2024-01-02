@@ -1,5 +1,6 @@
 import { Feed } from "feed";
-import { Post } from "app/posts/post-layout";
+import { Post } from "@app/posts/post-layout";
+
 import "server-only";
 
 export function getPostsAtomFeed(posts: Post[]) {

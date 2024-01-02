@@ -7,7 +7,8 @@ import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import rehypeHighlight from "rehype-highlight";
 import footnotes from "remark-footnotes";
-import { Post } from "../app/posts/post-layout";
+import { Post } from "@app/posts/post-layout";
+
 import "server-only";
 
 const postsDirectory = path.join(process.cwd(), "posts");
@@ -47,7 +48,7 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(id) {
+export async function getPostData(id: string) {
   const fullPath = path.join(postsDirectory, `${id}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 

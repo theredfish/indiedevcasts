@@ -9,6 +9,7 @@ import {
   PlayIcon,
 } from "@heroicons/react/24/solid";
 import { Post } from "@app/posts/post-layout";
+import Image from "next/image";
 
 export async function getStaticProps() {
   const recentPosts: Post[] = await getSortedPostsData();
@@ -207,14 +208,15 @@ function YoutubeVideo({ id }) {
       href={`https://youtu.be/${id}`}
       className="group flex relative items-center justify-center border-0"
     >
-      <img
-        // beep-boop-beep - cookie workaround.
+      <Image
         src={`https://i1.ytimg.com/vi/${id}/0.jpg`}
         alt={`Youtube video thumbnail`}
-        className="w-full h-52 lg:h-56 xl:h-64  object-cover rounded-md"
+        width="480"
+        height="360"
+        className="w-full h-52 lg:h-56 xl:h-64 rounded-md object-cover"
       />
       <div className="absolute flex w-16 h-16 rounded-full bg-red-600 group-hover:scale-110 group-hover:bg-red-400 transition duration-500 ease-in-out">
-        <PlayIcon className="h-10 text-gray-100 mx-auto my-auto " />
+        <PlayIcon className="h-10 text-gray-100 m-auto" />
       </div>
     </a>
   );

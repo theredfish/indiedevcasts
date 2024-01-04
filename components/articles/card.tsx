@@ -7,10 +7,12 @@ export default function ArticleCard({ article }) {
     <div className="w-full">
       <Link href={`/posts/${article.id}`}>
         {/* wrapper around the image to control its size */}
-        <div className="relative w-full h-52 lg:h-56 xl:h-64 hover:scale-105 transition duration-700 ease-in-out">
+        <div className="relative w-full h-48 md:h-54 lg:h-58 xl:h-64 hover:scale-105 transition duration-700 ease-in-out">
           <Image
             src={`/images/blog/${article.id}/${article.image}`}
+            priority={true}
             fill
+            sizes="(min-width: 768px) 30vw, 90vw"
             className="rounded-md"
             alt={`illustration for ${article.title}`}
           />

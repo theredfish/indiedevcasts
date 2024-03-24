@@ -42,7 +42,7 @@ function HeroBanner() {
           game development.
         </p>
         <p className="w-full  md:w-2/3 text-4xl lg:text-6xl align-middle">
-          Indie hacking, SaaS, games, voxel art and even aeroponics!
+          Gamedev, Rust, Bevy, Voxel Art
         </p>
       </div>
     </div>
@@ -75,47 +75,23 @@ function AboutIndiedevcasts() {
             </li>
             <li>
               <a
-                href="https://www.postgresql.org"
-                target="_blank"
-                className="text-gray-100"
-              >
-                PostgreSQL
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://nextjs.org"
-                target="_blank"
-                className="text-gray-100"
-              >
-                Next.js
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://tailwindcss.com"
-                target="_blank"
-                className="text-gray-100"
-              >
-                Tailwind CSS
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://bevyengine.org"
                 target="_blank"
                 className="text-gray-100"
               >
                 Bevy Engine
               </a>
-              ,{" "}
+            </li>
+            <li>
               <a
                 href="https://ephtracy.github.io/index.html?page=mv_main"
                 target="_blank"
                 className="text-gray-100"
               >
                 MagicaVoxel
-              </a>{" "}
-              and{" "}
+              </a>
+            </li>
+            <li>
               <a
                 href="https://www.blender.org"
                 target="_blank"

@@ -58,6 +58,18 @@
     @apply aspect-video w-full h-auto;
   }
 
+  .prose :where(video.max-size-md):not(:where([class~="not-prose"] *)) {
+    @apply w-full md:w-2/3 lg:w-1/3 h-auto;
+  }
+
+  .prose :where(video.max-size-lg):not(:where([class~="not-prose"] *)) {
+    @apply w-full md:w-3/5 h-auto;
+  }
+
+  .prose :where(video.max-size-xl):not(:where([class~="not-prose"] *)) {
+    @apply w-full md:w-4/5 h-auto;
+  }
+
   .prose :where(img.max-size-md):not(:where([class~="not-prose"] *)) {
     @apply w-full md:w-2/3 lg:w-1/3 h-auto;
   }

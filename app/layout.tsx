@@ -89,6 +89,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>
+        <link rel="me" href="https://mastodon.online/@indiedevcasts" />
         <PlausibleProvider domain="indiedevcasts.com" />
       </head>
       <body className="bg-gray-50 text-slate-800 antialiased">

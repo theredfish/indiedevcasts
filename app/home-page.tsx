@@ -42,7 +42,7 @@ function HeroBanner() {
           game development.
         </p>
         <p className="w-full  md:w-2/3 text-4xl lg:text-6xl align-middle">
-          Gamedev, Rust, Bevy, Voxel Art
+          Gamedev, Rust, Godot, Voxel Art
         </p>
       </div>
     </div>
@@ -74,6 +74,14 @@ function AboutIndiedevcasts() {
               </a>
             </li>
             <li>
+              <a
+                href="https://godotengine.org/"
+                target="_blank"
+                className="text-gray-100"
+              >
+                Godot
+              </a>
+              {", "}
               <a
                 href="https://bevyengine.org"
                 target="_blank"

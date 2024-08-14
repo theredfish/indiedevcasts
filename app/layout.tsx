@@ -66,7 +66,7 @@ function Footer() {
     <div className="mt-28">
       <hr className="bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
       <footer className="flex w-full bg-[#18181b] text-gray-100 py-5">
-        <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:w-full xl:w-3/5 max-w-4xl mx-auto px-10">
+        <div className="flex flex-col text-center sm:text-left sm:flex-row space-y-5 sm:space-y-0 justify-between sm:w-full xl:w-3/5 max-w-4xl mx-auto px-10">
           <div className="flex flex-col sm:flex-row sm:inline-flex sm:space-x-6">
             <span>&copy; {new Date().getFullYear()} Indiedevcasts</span>
             <Link href="/privacy-policy" className="text-gray-100 border-b-0">

@@ -1,5 +1,5 @@
 ---
-title: "Saya: Devlog #1"
+title: "Saya - Devlog #1: Genesis"
 description: "This is the first devlog for Saya, a game where you play a samurai slashing bad guys."
 image: "saya-devlog-1-cover.png"
 date: "2024-05-02"

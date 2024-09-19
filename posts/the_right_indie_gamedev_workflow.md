@@ -1,26 +1,11 @@
 ---
-title: "Thoughts after 2 years of game developement"
-description: "It's been 2 years of part-time game development and I decided to share my thoughts as a solo game developer."
-image: "2-years-of-gamedev-thoughts.png"
+title: "The right workflow for an indie game developer"
+description: "It's been 2 years of part-time game development and in this post I share how defining my own workflow helped me to keep it up."
+image: "the_right_indie_gamedev_workflow_cover.jpg"
 date: "2024-09-05"
 ---
 
-Hey! I'm Julian, a solo game developer. Two years ago I decided to go back to game development on my free time and build a community around it. I created this website, made videos and streamed on Twitch while learning how to make 3D voxel art games. Since one year I'm making Saya, a game featuring voxel graphics where you play a samurai summoned to rid the worlds of darkness.
-
-1. Quick intro about the current project, what I'm doing
-2. Finding your own style and workflow
-    2.b Take the time to fail
-    2.a How I found my own style with voxel art
-    2.c Create early builds (why => a step towards quality builds, pipeline to automate, try on different systems, demos, alpha, ... does it work?)
-3. Think big then cut the fat
-    3.a You shouldn't restrain yourself (ideas, let the flow, go to try, go gamedev => you should be passionate about )
-    3.b The compound effect (you will have a shit ton of dead projects, but also a shit ton of experience, systems, ...)
-    3.c The summer body of your next project
-4. Making games is not always fun
-    4.a You can't go fulltime
-    4.b You have to keep going
-    4.c A sleep debt "this big"
-5. Pursue your dreams, go make games
+Hey! I'm Julian, an indie game developer. Two years ago I decided to go back to game development on my free time and build a community around it. I created this website, made videos and streamed on Twitch while learning how to make 3D voxel art games. Since one year I'm making Saya, a game featuring voxel graphics where you play a samurai summoned to rid the worlds of darkness.
 
 ## Find your own style and workflow
 
@@ -51,7 +36,7 @@ great way to reuse code or assets across projects because you removed the depend
 According to the general consensus, it's better to reduce your scope at maximum to learn and fail fast. I agree with this statement except in these two cases:
 
 - You don't have prior experience, you just start game development in which case you shouldn't restrain your motivation.
-Go for your big dream project, and fail. Expel that need to create your big dream project, you will realize your limits
+Go for your big dream project, and fail. Expel that need to create your dream project, you will realize your limits
 soon enough. However you will **learn**. Everything you do in this first attempt will serve you for the rest of your
 gamedev path.
 
@@ -66,11 +51,44 @@ that you practiced and gained experience that you can reuse later for your next 
 
 I recommend to make a light game design document, or take notes somewhere so you can have a general frame. Then you can go back and forth to your game design document when you validate or reject some ideas. Try to keep it small and efficient. This document should help you or anyone to keep track of the scope and at the minimum the core features of your game.
 
-### Be ready to throw away
+### The summer body of your next project
 
-Just like with any experimentation you need to analyse the outcome and take a decision. You keep it or you throw it
-away. [todo]
+Just like with any experimentation you need to analyse the outcome and make a decision. Was your scope too big? Or
+maybe you lost motivation for this particular project? You might also realize you wanted to try a specific game mechanic
+or art direction but you still don't know what should be the game. It's all right, you just need to take a step back,
+assess and accept it could be time to stop.
 
-### Create game builds early
+I know, it's hard. Because you love your project, you spent a lot of time on it, to pitch it or share it on social media
+and now you have to throw it away? How dare you? Yeah... but you know it's not lost knowledge or experience. Did you
+build a community, even a small one? Did you learn something? Did you achieve something you were proud of? Did you have
+this rush of dopamine with this specific part of the game you created?
+
+Good! Now keep this project somewhere, version it with git and put it on Gitlab or Github if it's not already the case.
+It's time for a new project, but you will anticipate more things now:
+
+- What are your limits? Take the time to list them and how to overcome them. Be reasonable.
+- What worked or didn't? Learn from your failures just as your successes.
+- Did you find your own style and workflow? Or is it something you should explore a bit more?
+- Was you scope too important? List all the elements you think were too much for you. Be honest.
+
+This is what I call the summer body of your next project! Now I want to share with you what I learned, and maybe you can pick some ideas for your games!
+
+## Zero to gamedev
+
+### My first game development experience
+
+### Failures after failures
 
 ### My experimentations with voxel art
+
+### Building a community
+
+## Making games is not always fun
+
+### You can't go fulltime
+
+### You have to keep going
+
+### Sleep debt overflow
+
+## Pursue your dreams, go make games

@@ -75,13 +75,67 @@ This is what I call the summer body of your next project! Now I want to share wi
 
 ## Zero to gamedev
 
+I want to go through my game development experience over the last years and share with you what I learned. While I
+consider I'm really doing game development since 2 years, note that I had a few experiences before that gave me a taste
+of video game development.
+
 ### My first game development experience
+
+Back in 2014 when I was a student at the university in computer science, me and a bunch of cool geeks decided to participate to our first gamejam. We thought it would be a good way to put our feet in this industry and strengthen our programming skills.
+
+We participated to the "Utopiales Game Jam". It was a bit intimidating. I particularly remember that some folks from
+Alkemi, a french indie game studio, were participating to this game jam. But still, I went completely unprepared. I
+only learned how to use Unity through the space shooter tutorial 3 days before. Why Unity? Because it was very popular,
+free and appreciated from indie developers. So the chances to find people who use this game engine in game jam were
+quite high — My guess was correct, almost everybody was using it. If I had to chose today, I think it would mainly be
+Godot and Unity. Both are popular amongst indies.
+
+It's been my most important game development experience. I didn't sleep much but I learned a lot and it was just a lot
+of fun. We formed a team of 10! And I learned about all these other roles necessary to make a game: sound designers, graphic designers, motion designers, game designers, ...
+
+The game jam theme was "Brain" and we had 48 hours to find a game idea, make it, publish it and the best part: few days
+later people from the "Utopiales" event would be able to play it! It was a crazy and intense first experience where we
+made a puzzle game to connect neurons between them to solve each level! I even get some help from the Alkemi's creative director to implement a core game mechanic. I remember how happy I was to get some help from someone who is experienced in making and publishing games. Not only it helped us a lot (certainly saved us several hours), but also it felt just great to share this short moment with a game developer.
+
+Then I participated to more game jams (always physical), some went well, others were a bit more difficult. You don't always find the right roles or the right scope for your game. But no matter the game jam I always learned something — especially how to work with a team.
+
+In conclusion, add gamejams in your learning process! Even if you are actively developing your own game it will help you
+to learn new things, meet people and take a break from your game. You can go solo or with a team, as you prefer.
 
 ### Failures after failures
 
-### My experimentations with voxel art
+Ok game jams are fun and all but I never cross a point where we decided to pursue the game long enough to make a
+commercial release. So what do you do? You make your own game. Do you have a team? No. But that's ok because you're
+ready to wear several hats, handle everything by yourself and in 3 to 6 months publish your game on Steam. Nein!
 
-### Building a community
+At this point you just realize that you need to learn all the things that aren't your main skills. For me it was:
+
+- 3D Modeling
+- Character design
+- Rigging, animating
+- A bit of physics
+- Shaders
+- Marketing, communication, ...
+
+And most of all you need to be resilient! Life will not bend to your gamedev schedule. Also you will lose motivation and
+interest in your game. You will also hate your game. I'm now at my 4th attempt of making a game that I can publish and
+not necessarily a commercial game. I tried to make a weird 3D game where you catapult egg warriors from one planet to
+another to conquer them. Then I decided it was just cool to make a skateboarding game with ragdolls, because why not?
+I finally made a very short attempt in making a 2D game with boats fighting each other in a big storm. But I'm just
+really bad at 2D graphisms — did you know how hard it is to make good pixel/2D art? Hats off to all the 2D artists.
+
+My main issue was my inability, as a solo developer, to create good art. I can easily imagine a scene and the art
+direction but my lack of artistic skills to produce what I had in mind always frustrated me to the summum. Of course you
+can blockout and use generic game assets. But at some point you need to see it and integrate your art with your game
+mechanics. You know that with no money, all you can do is to learn it by yourself.
+
+I had to make all these attempts to discover that my style is voxel art! Conclusion? Failures are experimentations.
+
+### Creating worlds with Voxel Art
+
+### Integration and game builds
+
+### Developing a community
 
 ## Making games is not always fun
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default async function Page() {
   return (
-    <div className="blog-container text-lg">
+    <div className="blog-container text-lg h-full">
       <H2>Legal Notice</H2>
       <h3 className="text-xl text-slate-600">
         Last Update: <Date dateString="2023-12-30" />

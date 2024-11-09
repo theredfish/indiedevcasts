@@ -68,7 +68,11 @@ function Footer() {
       <footer className="flex w-full bg-[#18181b] text-gray-100 py-5">
         <div className="flex flex-col text-center sm:text-left sm:flex-row space-y-5 sm:space-y-0 justify-between sm:w-full xl:w-3/5 max-w-4xl mx-auto px-10">
           <div className="flex flex-col sm:flex-row sm:inline-flex sm:space-x-6">
-            <span>&copy; {new Date().getFullYear()} Indiedevcasts</span>
+            <Link href="/" className="text-gray-100 border-b-0">
+              <span>
+                &copy; 2018 - {new Date().getFullYear()} Indiedevcasts
+              </span>
+            </Link>
             <Link href="/privacy-policy" className="text-gray-100 border-b-0">
               Privacy Policy
             </Link>
@@ -94,7 +98,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </head>
       <body className="bg-gray-50 text-slate-800 antialiased">
         <header className="bg-overlapping-circles py-10">
-          <div className="relative py-10">
+          <div className="relative">
             <Link href="/">
               {/* initial ratio: 330x258 */}
               <Image
@@ -112,7 +116,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </Link>
           </div>
         </header>
-        <hr className="mb-16 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
+        <hr className="mb-4 border-t-[#18181b] bg-gradient-to-r from-teal-300 via-purple-400 to-red-400 h-2" />
         {children}
         <Footer />
       </body>

@@ -7,9 +7,11 @@ import {
   ChatBubbleLeftRightIcon,
   NewspaperIcon,
   PlayIcon,
+  HeartIcon,
 } from "@heroicons/react/24/solid";
 import { Post } from "@app/posts/post-layout";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const recentPosts: Post[] = await getSortedPostsData();
@@ -209,6 +211,17 @@ function YoutubeVideo({ id }) {
 export default function HomePage({ recentPosts, youtubeVideoIds }) {
   return (
     <div>
+      <section className="flex place-content-center md:place-content-end blog-container">
+        <Link
+          href="/support"
+          className="flex rounded-md bg-purple-600 text-gray-100 py-3 px-4
+          font-medium hover:bg-purple-500 hover:text-gray-100 border-0"
+        >
+          <span className="inline-flex items-center capitalize">
+            <HeartIcon className="h-5 mr-1" /> support
+          </span>
+        </Link>
+      </section>
       <Articles recentPosts={recentPosts} />
 
       <HeroBanner />
